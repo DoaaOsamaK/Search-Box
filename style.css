@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background: #013c58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  max-width: 400px;
+  width: 100%;
+
+}
+.box .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 50px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+#check:checked ~ .search-box{
+  max-width: 380px;
+}
+.search-box input{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ border-radius: 25px;
+ background: #fff;
+ outline: none;
+ border: none;
+ padding-left: 20px;
+ font-size: 18px;
+}
+.search-box .icon{
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background: #FFF;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #013c58;
+  font-size: 20px;
+  border-radius: 25px;
+}
+#check:checked ~ .search-box .icon{
+  background: #013c58;
+  color: #FFF;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+}
+#check{
+  display: none;
+}
+.css-selector {
+    background: linear-gradient(1deg, #a8e8f9, #f5a201, #013c58, #ffd35b);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 32s ease infinite;
+    -moz-animation: AnimationName 32s ease infinite;
+    -o-animation: AnimationName 32s ease infinite;
+    animation: AnimationName 32s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:44% 0%}
+    50%{background-position:57% 100%}
+    100%{background-position:44% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:44% 0%}
+    50%{background-position:57% 100%}
+    100%{background-position:44% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:44% 0%}
+    50%{background-position:57% 100%}
+    100%{background-position:44% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:44% 0%}
+    50%{background-position:57% 100%}
+    100%{background-position:44% 0%}
+}
